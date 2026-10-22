@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "helvetica neue";
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 html,
@@ -18,20 +18,35 @@ main {
   width: 100%;
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 10% 40% 40% 10%;
+  gap: 10px;
 }
 
-.box {
-  background-color: rgb(128, 11, 98);
-  border: 1px solid white;
-  height: 200px;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header {
+  background-color: #0077b6;
+  grid-column: 1/3;
+}
+
+.lefttop {
+  background-color: #116f8f;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.leftbottom {
+  background-color: #00b4d8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.right {
+  background-color: #48cae4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+footer {
+  background-color: #023e8a;
+  grid-column: 1/3;
 }
