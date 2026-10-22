@@ -18,37 +18,36 @@ main {
   width: 100%;
   background-color: black;
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
-  grid-template-rows: repeat(3, 33.3%);
   gap: 5px;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 10% 60% 30%;
   grid-template-areas:
-    "top-center top-center top-center"
-    "left-center center-bottom right-center"
-    "left-bottom center-bottom right-bottom";
+    "nav nav nav"
+    "left-top left-top right"
+    "left-bottom-left left-bottom-right right";
 }
 
-.top-center {
+.nav {
   background-color: #cdd8d6;
-  grid-area: top-center;
-}
-.left-center {
-  background-color: #89b9b2;
-  grid-area: left-center;
-}
-.left-bottom {
-  background-color: #496f70;
-  grid-area: left-bottom;
+  grid-area: nav;
 }
 
-.center-bottom {
-  background-color: #062d35;
-  grid-area: center-bottom;
+.lefttop {
+  background-color: #89b9b2;
+  grid-area: left-top;
 }
-.right-center {
+
+.left-bottom-left {
+  background-color: #496f70;
+  grid-area: left-bottom-left;
+}
+
+.left-bottom-right {
   background-color: #17474d;
-  grid-area: right-center;
+  grid-area: left-bottom-right;
 }
-.right-bottom {
+
+.right {
   background-color: #031a27;
-  grid-area: right-bottom;
+  grid-area: right;
 }
