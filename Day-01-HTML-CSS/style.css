@@ -17,6 +17,10 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav {
@@ -42,6 +46,40 @@ body {
 }
 
 .part3 {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(187, 196, 221);
+}
+
+#center {
+  height: 30%;
+  width: 100%;
+  background-color: tan;
+}
+
+#buttom {
+  height: 20%;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.btm1 {
+  height: 100%;
+  width: 15%;
+  background-color: royalblue;
+}
+
+.btm2 {
+  height: 100%;
+  width: 40%;
+  background-color: rgb(130, 155, 231);
+}
+
+.btm3 {
   height: 100%;
   width: 20%;
   background-color: rgb(187, 196, 221);
