@@ -20,36 +20,35 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
   grid-template-rows: repeat(3, 33.3%);
+  gap: 5px;
+  grid-template-areas:
+    "top-center top-center top-center"
+    "left-center center-bottom right-center"
+    "left-bottom center-bottom right-bottom";
 }
 
 .top-center {
   background-color: #cdd8d6;
-  grid-row: 1/2;
-  grid-column: 1/4;
+  grid-area: top-center;
 }
 .left-center {
   background-color: #89b9b2;
-  grid-row: 2/3;
-  grid-column: 1/2;
+  grid-area: left-center;
 }
 .left-bottom {
   background-color: #496f70;
-  grid-row: 3/4;
-  grid-column: 1/2;
+  grid-area: left-bottom;
 }
 
 .center-bottom {
   background-color: #062d35;
-  grid-row: 2/4;
-  grid-column: 2/3;
+  grid-area: center-bottom;
 }
 .right-center {
   background-color: #17474d;
-  grid-row: 2/3;
-  grid-column: 3/4;
+  grid-area: right-center;
 }
 .right-bottom {
   background-color: #031a27;
-  grid-row: 3/4;
-  grid-column: 3/4;
+  grid-area: right-bottom;
 }
