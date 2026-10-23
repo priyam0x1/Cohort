@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica neue";
+  color: white;
+  font-size: 50px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+h1 {
+  background-color: rgb(21, 73, 56);
+  width: 20ch;
+  height: 10ex;
+}
