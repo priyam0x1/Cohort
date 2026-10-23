@@ -14,8 +14,15 @@ body {
   background-color: black;
 }
 
-h1 {
-  background-color: rgb(21, 73, 56);
-  width: 20ch;
-  height: 10ex;
+#parent {
+  min-height: 100%;
+  width: 100%;
+  background-color: rgb(14, 5, 65);
+}
+
+#box {
+  background-color: crimson;
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
 }
