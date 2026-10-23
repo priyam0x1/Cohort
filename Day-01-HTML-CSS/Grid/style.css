@@ -17,37 +17,59 @@ main {
   height: 100%;
   width: 100%;
   background-color: black;
+  padding: 10px;
   display: grid;
-  gap: 5px;
-  grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 10% 60% 30%;
+  gap: 10px;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-template-rows: 30% 22% 8% 40%;
   grid-template-areas:
-    "nav nav nav"
-    "left-top left-top right"
-    "left-bottom-left left-bottom-right right";
+    "nue apple apple avail"
+    "new four manage avail"
+    "new four manage revenue"
+    "basic basic manage revenue";
 }
 
-.nav {
-  background-color: #cdd8d6;
-  grid-area: nav;
+div {
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 
-.lefttop {
-  background-color: #89b9b2;
-  grid-area: left-top;
+.neu {
+  background-color: #5125d5;
+  grid-area: nue;
 }
 
-.left-bottom-left {
-  background-color: #496f70;
-  grid-area: left-bottom-left;
+.apple-icon {
+  background-color: #eae4ff;
+  grid-area: apple;
 }
 
-.left-bottom-right {
-  background-color: #17474d;
-  grid-area: left-bottom-right;
+.avail {
+  background-color: #b18af7;
+  grid-area: avail;
 }
 
-.right {
-  background-color: #031a27;
-  grid-area: right;
+.new_user {
+  background-color: #eae4ff;
+  grid-area: new;
+}
+
+.four_nine {
+  background-color: #5125d5;
+  grid-area: four;
+}
+
+.manage {
+  background-color: #eae4ff;
+  grid-area: manage;
+}
+
+.revenue {
+  background-color: #673de6;
+  grid-area: revenue;
+}
+
+.basic {
+  background-color: #5125d5;
+  grid-area: basic;
 }
