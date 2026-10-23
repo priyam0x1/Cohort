@@ -14,15 +14,6 @@ body {
   background-color: black;
 }
 
-#parent {
-  max-height: 50%;
-  width: 100%;
-  background-color: rgb(14, 5, 65);
-}
-
-#box {
-  background-color: crimson;
-  height: 200px;
-  width: 200px;
-  border: 2px solid white;
+h1 {
+  font-size: clamp(20px, 30px, 40px);
 }
