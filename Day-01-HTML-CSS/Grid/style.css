@@ -69,6 +69,18 @@ div {
   grid-area: revenue;
 }
 
+.circle {
+  height: 100%;
+  width: 50%;
+  background: radial-gradient(rgb(241, 234, 235), rgb(236, 135, 151));
+  border-radius: 50%;
+  margin: auto;
+}
+
+.revenue img {
+  height: 100px;
+  width: 100px;
+}
 .basic {
   background-color: #5125d5;
   grid-area: basic;
