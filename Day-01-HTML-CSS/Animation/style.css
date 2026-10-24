@@ -14,25 +14,27 @@ body {
   background-color: black;
 }
 
-img {
-  height: 100px;
-  position: absolute;
-  animation-name: dora;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.parent {
+  display: flex;
+  background-color: crimson;
+  gap: 10px;
 }
 
-@keyframes dora {
+h4 {
+  background-color: lightseagreen;
+  padding: 15px;
+  font-size: 20px;
+  animation-name: chacha;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes chacha {
   from {
-    left: 0;
-    top: 0;
-    rotate: 0;
+    transform: translateX(0);
   }
   to {
-    left: 75%;
-    top: 50%;
-    rotate: 360deg;
+    transform: translateX(-100%);
   }
 }
