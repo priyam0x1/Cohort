@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "helvetica neue";
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 html,
@@ -14,6 +14,35 @@ body {
   background-color: black;
 }
 
-h1 {
-  font-size: clamp(20px, 30px, 40px);
+nav {
+  height: 60px;
+  min-width: 100%;
+  padding: 0 35px;
+  background-color: rgb(17, 131, 125);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.part2 {
+  display: flex;
+  gap: 30px;
+}
+
+h5 {
+  font-size: 15px;
+  display: none;
+}
+
+@media (max-width: 780px) {
+  nav {
+    background-color: crimson;
+  }
+  h4 {
+    display: none;
+  }
+  h5 {
+    display: block;
+    cursor: pointer;
+  }
 }
