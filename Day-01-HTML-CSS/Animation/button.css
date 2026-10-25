@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica neue";
+  color: #ffffff;
+  font-size: 30px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  margin: 50px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 199, 255);
+  color: rgb(0, 199, 255);
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: royalblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:hover::after {
+  width: 100%;
+}
