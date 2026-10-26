@@ -8,6 +8,7 @@ main {
   width: 100%;
   min-height: 100vh;
   background-color: #fbf9eb;
+  padding: 1vw;
 }
 
 nav {
@@ -16,20 +17,50 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.3vw 1vw;
+  border-radius: 1vw;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
 }
 
 nav .nav-part-1 {
   display: flex;
   gap: 1rem;
-  font-size: 1rem;
+  width: 33.33%;
+}
+
+nav .nav-part-1 h3 {
+  font-weight: 300;
 }
 
 nav .nav-part-2 {
   width: 5vw;
   height: auto;
+  /* background-color: aqua; */
+  margin-right: 5vw;
 }
 
 .nav-part-2 img {
   width: 100%;
+  object-fit: cover;
+}
+
+nav .nav-part-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.6vw;
+  padding: 0.5vw;
+  width: 37%;
+  text-align: center;
+}
+
+nav .nav-part-3 h3 {
+  font-weight: 300;
+}
+
+.nav-part-3 i {
+  font-size: 1.5rem;
+
+  opacity: 0.7;
 }
