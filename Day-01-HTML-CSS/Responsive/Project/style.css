@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbf9eb;
+}
+
+nav {
+  background-color: #fffefb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav .nav-part-1 {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+nav .nav-part-2 {
+  width: 5vw;
+  height: auto;
+}
+
+.nav-part-2 img {
+  width: 100%;
+}
