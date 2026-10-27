@@ -29,6 +29,7 @@ body {
 
 .nav-part2 {
   display: flex;
+  align-items: center;
   gap: 2vw;
 }
 
@@ -39,4 +40,33 @@ body {
 
 .nav h4 {
   font-size: 1vw;
+}
+
+.nav i {
+  font-size: 1.5vw;
+  font-weight: 800;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 0 5vw;
+    height: 60px;
+  }
+
+  .nav h2 {
+    font-size: 6vw;
+  }
+
+  .nav h4 {
+    font-size: 4vw;
+    display: none;
+  }
+
+  .nav i {
+    display: block;
+    font-size: 6vw;
+  }
 }
