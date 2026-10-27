@@ -24,7 +24,7 @@ body {
   border-bottom: 2px solid #dadada;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 0 4vw;
 }
 
 .nav-part2 {
@@ -34,12 +34,21 @@ body {
 }
 
 .nav h2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 700;
 }
 
 .nav h4 {
+  font-size: 1.1vw;
+}
+
+.nav button {
   font-size: 1vw;
+  padding: 0.7vw 1.4vw;
+  background-color: #ff735c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
 .nav i {
@@ -50,18 +59,20 @@ body {
 
 @media (max-width: 600px) {
   .nav {
-    background-color: lightseagreen;
-    color: #fff;
     padding: 0 5vw;
     height: 60px;
   }
 
   .nav h2 {
-    font-size: 6vw;
+    font-size: 5.1vw;
   }
 
   .nav h4 {
     font-size: 4vw;
+    display: none;
+  }
+
+  .nav button {
     display: none;
   }
 
@@ -81,7 +92,7 @@ body {
 .left {
   height: 100%;
   width: 56%;
-  padding: 5vw 5vw;
+  padding: 5vw 4vw;
 }
 
 .left h1 {
@@ -90,7 +101,7 @@ body {
 }
 
 .left h1 span {
-  color: lightseagreen;
+  color: #ff735c;
 }
 
 .left p {
@@ -102,10 +113,10 @@ body {
   margin-bottom: 3vw;
 }
 
-button {
+.content button {
   font-size: 1.2vw;
   padding: 1.1vw 2.1vw;
-  background-color: lightseagreen;
+  background-color: #ff735c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -114,4 +125,9 @@ button {
 .right {
   height: 100%;
   width: 44%;
+}
+
+.right img {
+  height: 100%;
+  width: 100%;
 }
