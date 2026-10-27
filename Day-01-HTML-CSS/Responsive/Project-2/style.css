@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  border-bottom: 2px solid #dadada;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+
+.nav-part2 {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav h2 {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.nav h4 {
+  font-size: 1vw;
+}
