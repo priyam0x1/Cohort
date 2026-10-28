@@ -347,7 +347,32 @@ nav i {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 490px) {
+  .image-circle {
+    width: 350px;
+    height: 350px;
+    top: 33px;
+    left: -25px;
+  }
+
+  .hero-image {
+    width: 300px;
+    height: 370px;
+    top: 10px;
+    transform: translateX(-9%);
+  }
+
+  .floating-card {
+    left: -95px;
+    transform: translateY(-10%);
+  }
+
+  .vertical-text {
+    right: -15px;
+  }
+}
+
+@media (max-width: 390px) {
   .image-circle {
     width: 280px;
     height: 280px;
@@ -407,6 +432,10 @@ nav i {
 @media (max-width: 530px) {
   .section-heading {
     flex-direction: column;
+  }
+
+  .section-heading .view-all {
+    width: 100%;
   }
 }
 
@@ -498,6 +527,12 @@ nav i {
   background-color: #39291f;
   color: white;
   border-color: #39291f;
+}
+
+@media (max-width: 650px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* About Section */
