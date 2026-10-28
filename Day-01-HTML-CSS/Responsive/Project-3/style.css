@@ -183,6 +183,15 @@ nav i {
   margin-top: 7px;
 }
 
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    width: 100%;
+  }
+}
+
 /* Hero Image */
 .hero-right {
   width: 43%;
@@ -246,6 +255,12 @@ nav i {
   font-size: 10px;
   letter-spacing: 3px;
   color: #a66d43;
+}
+
+@media (max-width: 750px) {
+  .hero-right {
+    width: 100%;
+  }
 }
 
 /* Products Section */
