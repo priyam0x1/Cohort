@@ -75,6 +75,23 @@ button {
   transform: translateY(-2px);
 }
 
+nav i {
+  font-size: 2vw;
+  font-weight: 600;
+  display: none;
+}
+
+@media (max-width: 750px) {
+  nav i {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+}
+
 /* Hero Section */
 .hero {
   min-height: 600px;
