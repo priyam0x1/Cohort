@@ -211,6 +211,19 @@ nav i {
   .hero .hero-left .hero-buttons .secondary-btn {
     font-size: 2.5vw;
   }
+
+  .hero .hero-left .hero-stats {
+    width: 100%;
+    gap: 70px;
+  }
+
+  .hero .hero-left .hero-stats h3 {
+    font-size: 4vw;
+  }
+
+  .hero .hero-left .hero-stats p {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -221,6 +234,19 @@ nav i {
 
   .hero .hero-left .hero-buttons .secondary-btn {
     font-size: 4.5vw;
+  }
+
+  .hero .hero-left .hero-stats {
+    width: 100%;
+    gap: 60px;
+  }
+
+  .hero .hero-left .hero-stats h3 {
+    font-size: 6vw;
+  }
+
+  .hero .hero-left .hero-stats p {
+    font-size: 3.5vw;
   }
 }
 
