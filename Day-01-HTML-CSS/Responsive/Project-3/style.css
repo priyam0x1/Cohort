@@ -183,12 +183,44 @@ nav i {
   margin-top: 7px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 875px) {
   .hero {
     flex-direction: column;
   }
   .hero-left {
     width: 100%;
+  }
+
+  .hero .hero-left .tagline {
+    font-size: 1rem;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 10.5vw;
+  }
+
+  .hero .hero-left .description {
+    font-size: 1.15rem;
+  }
+
+  .hero .hero-left .hero-buttons .primary-btn {
+    font-size: 3vw;
+    padding: 8px 14px;
+  }
+
+  .hero .hero-left .hero-buttons .secondary-btn {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero .hero-left .hero-buttons .primary-btn {
+    font-size: 4.25vw;
+    padding: 8px 12.5px;
+  }
+
+  .hero .hero-left .hero-buttons .secondary-btn {
+    font-size: 4.5vw;
   }
 }
 
@@ -257,9 +289,10 @@ nav i {
   color: #a66d43;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .hero-right {
     width: 100%;
+    left: 200;
   }
 }
 
@@ -271,7 +304,8 @@ nav i {
 
 .section-heading {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -292,6 +326,11 @@ nav i {
   font-size: 13px;
   border-bottom: 1px solid #b77745;
   padding-bottom: 6px;
+}
+
+@media (max-width: 530px) {
+  .section-heading {
+  }
 }
 
 .product-grid {
