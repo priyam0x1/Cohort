@@ -1,11 +1,17 @@
-const body = document.querySelector("body");
-const h1 = document.querySelectorAll("h1");
-h1[0].textContent = "I am changed";
-console.log(h1[2].classList.contains("heading"));
-h1[2].classList.toggle("heading");
-// const isClass = h1.classList.contains("heading");
-// console.log(isClass);
+const btn = document.querySelector("button");
+const clBtn = document.querySelector(".btn");
+const bulb = document.querySelector(".bulb");
 
-// body.classList.remove("red");
-// console.log(body.innerText);
-// console.log(body.textContent);
+let flag = true;
+
+btn.addEventListener("click", () => {
+  if (flag) {
+    clBtn.innerText = "Off";
+    bulb.classList.toggle("color");
+    flag = false;
+  } else {
+    clBtn.innerText = "On";
+    bulb.classList.toggle("color");
+    flag = true;
+  }
+});
