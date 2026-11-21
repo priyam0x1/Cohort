@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0b0d14;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* Main Container */
+main {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  background: #131722;
+  border: 1px solid #252c3a;
+  border-radius: 20px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading-like input section */
+main > div:first-child {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 18px;
+  background: #1c2332;
+  color: #f8fafc;
+  border: 1px solid #30394a;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input::placeholder {
+  color: #778196;
+}
+
+input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+/* Add Button */
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+#add {
+  padding: 0 25px;
+  color: white;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  border-radius: 10px;
+}
+
+#add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Todo List */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual Task */
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  background: #1a2030;
+  border: 1px solid #293244;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.li:hover {
+  background: #20283a;
+  border-color: #5550a5;
+  transform: translateY(-2px);
+}
+
+.li h3 {
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* Task Action Buttons */
+.li > div {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+#edit,
+#delete {
+  padding: 8px 13px;
+  border-radius: 7px;
+  color: #cbd5e1;
+  background: #2a3345;
+}
+
+#edit:hover {
+  color: #c4b5fd;
+  background: #38305b;
+}
+
+#delete:hover {
+  color: #fca5a5;
+  background: #4b252d;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  main {
+    padding: 22px 16px;
+  }
+
+  .li {
+    padding: 14px;
+  }
+
+  .li > div {
+    gap: 5px;
+  }
+
+  #edit,
+  #delete {
+    padding: 8px 9px;
+    font-size: 11px;
+  }
+
+  #add {
+    padding: 0 17px;
+  }
+}
