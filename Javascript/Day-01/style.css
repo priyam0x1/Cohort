@@ -10,4 +10,25 @@ body {
   width: 100%;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 60%;
+  width: 80%;
+  background-color: rgb(82, 80, 77);
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.box {
+  height: 20%;
+  width: 30%;
+  background-color: red;
 }
