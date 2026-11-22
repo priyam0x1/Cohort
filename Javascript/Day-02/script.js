@@ -1,9 +1,11 @@
-const btn = document.querySelector("button");
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const form = document.querySelector("form");
 
-window.addEventListener("keypress", (event) => {
-  console.log(event);
-});
-
-btn.addEventListener("click", (event) => {
-  console.log(event);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log(event.target[0].value);
+  console.log(event.target[1].value);
+  event.target[0].value = "";
+  event.target[1].value = "";
 });
